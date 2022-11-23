@@ -9,3 +9,6 @@ def read_data(file_path: str) -> dict:
     Returns:
         dict: dict data from file
     '''
+    reading = open(file_path).read()
+    dict_file = json.loads(reading)
+    return dict_file
