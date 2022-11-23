@@ -7,3 +7,7 @@ def get_all_nats(data: dict) -> list[str]:
     Returns:
         list: list of nats.
     '''
+    nats = []
+    for nat in data['results']:
+        nats.append(nat['nat'])
+    return nats
