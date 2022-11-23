@@ -7,3 +7,7 @@ def get_all_streets(data: dict) -> list[str]:
     Returns:
         list: list of streets.
     '''
+    streets = []
+    for street in data['results']:
+        streets.append(street['location']['street']['name'])
+    return streets
