@@ -7,3 +7,7 @@ def get_all_countries(data: dict) -> list[str]:
     Returns:
         list: list of countries.
     '''
+    countries = []
+    for country in data['results']:
+        countries.append(country['location']['country'])
+    return countries
